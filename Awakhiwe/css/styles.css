@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@media only screen and (min-width: 1200px)
+
+/* DESKTOP LAYOUT */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* TOP NAV MENU */
+
+.flex-nav {
+    width: 100%;
+    height: 10vh;  
+    background: #f8f2ec;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-nav.logo {
+    width: auto;
+}
+
+.flex-nav .menu {
+    width: auto;
+}
+.flex-nav .social {
+    width: auto;
+}
+
+.logo p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.logo img {
+    width: 60%;
+}
+
+.menu a {
+    padding: 50px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #ffcc00c2;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+}
+
+.social a {
+    padding: 25px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.menu a:hover {
+    color:black;
+}
+.social a:hover {
+    color: #ffcc00;
+}
+.logo a:hover {
+    opacity: 0.7;
+}
+
+.menu a.active {
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 10px;
+    width: 100vw;
+    z-index: 99;
+} 
+
+.sticky + .flex-main{
+    padding-top: 90px;
+  }
+
+  
+/* MAIN */
+
+.flex-main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.flex-main .quotes {
+    width: 40vw;
+    padding: 40px;
+    align-self: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.quotes h3 {
+    letter-spacing: 3px;
+}
+
+.quotes a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.quotes a:hover {
+    color: black;
+}
+
+
+
+
+/* SLIDESHOW */
+
+ .swiper-container {
+      width: 60vw;
+      height: 100%;
+}
+.swiper-wrapper {
+      width: 60%;
+      height: 100%;
+      background: black;
+}
+.swiper-slide {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 60%;
+      height: 100%;
+}
+
+.swiper-slide img {
+    height: 100%;
+}
+
+#slide1 {
+    background: url(../images/awa1.jpg) no-repeat center center;
+    background-size:cover;
+}
+#slide2 {
+    background: url(../images/awa2.jpg) no-repeat center center;
+    background-size:cover;
+}
+#slide3 {
+    background: url(../images/awa3.jpg) no-repeat center center;
+    background-size:cover;
+}
+#slide4 {
+    background: url(../images/awa4.jpg) no-repeat center center;
+    background-size:cover;
+}
+#slide5 {
+    background: url(../images/awa5.jpg) no-repeat center center;
+    background-size:cover;
+}
+
+
+
+/* NEWS SECTION */
+
+#news-header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 0;
+    grid-area: header;
+    color: black;      
+}
+
+#news-header a {    
+    text-decoration: none;
+    font-size: 1.75em;
+    color: black;
+}
+
+#news-header a:hover {
+    color: white;
+}
+
+#news-header a:visited {
+    color: black;
+}
+.icon-img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+.news-icons {
+    background-color: #f2f2f2;
+    height: 380px;
+    padding: 20px;
+    margin: 0;
+}
+#news-one {
+    grid-area: one;
+}
+#news-two {
+    grid-area: two;
+}
+#news-three {
+    grid-area: three;
+}
+
+.grid-news {
+    width: 100%;
+    padding: 30px 60px; 
+    padding-bottom: 50px;
+    background: #f8f2ec;    
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        "header header header"
+        "one two three";
+}
+
+.grid-news a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.grid-news a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* TOPICS SECTION */
+
+.grid-topics img {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+#topics_header {
+    margin-left: 0px;
+    text-align: left;
+    font-size: 1.25em;
+    color: black;
+    grid-area: topicshead;
+}
+#topics_header a {
+    text-decoration: none;
+    color: black;
+}
+
+#topics_header a:hover {
+    color: #ffcc00;
+}
+
+#topic-one {
+    grid-area: topic1;
+}
+#topic-two {
+    grid-area: topic2;
+}
+#topic-three {
+    grid-area: topic3;
+}
+#topic-four {
+    grid-area: topic4;
+}
+
+.grid-topics {
+    width: 100%;
+    padding: 30px;    
+    padding-bottom: 50px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    grid-gap: 50px;    
+    grid-template-areas: 
+        "topicshead topicshead topicshead topicshead"
+        "topic1 topic2 topic3 topic4";
+}
+.grid-topics a:hover {
+    opacity: 0.8;
+}
+.grid-topics h3 {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 3px;
+}
+
+/* FOOTER */
+
+footer {
+	background: #333;
+	color:#fff;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 100%;
+	min-height: 15vh;
+	height: auto;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer aside {
+    width: 20%;
+}
+
+footer aside h2 {
+	margin-bottom: 20px;
+}
+
+footer .foot a, footer .footsocial a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 6px;
+}
+
+footer .foot a:hover, footer .footsocial a:hover {
+	color: #e6b800;
+}
+
+/* FOOTER FORM */
+
+
+footer form {
+	display:flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+footer form input[type="email"] {
+	height:43px;
+	border-top:solid 1px #ced4da;
+	border-left:solid 1px #ced4da;
+	border-bottom:solid 1px #ced4da;
+	border-right:none;
+	padding: 10px;
+	background:transparent;
+	font-size:18px;
+	color:#fff;
+	outline:none;
+}
+
+footer form input[type="submit"] {
+	background: #e6b800;
+	border:1px solid transparent;
+	outline:none;
+	height:43px;
+	padding: 10px 15px;
+	color: black;
+	font-size:18px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+footer form input[type="submit"]:hover {
+	background-color: #e6b800;
+}

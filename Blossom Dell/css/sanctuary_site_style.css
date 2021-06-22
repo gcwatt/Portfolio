@@ -1,0 +1,330 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      font-family: 'Karla', sans-serif;
+      height: 10vh;
+      background-color: #f6efee;
+}
+.navmenu {
+    width: 60%;
+}
+
+.navmenu a.active {
+    color: saddlebrown;
+}
+
+.logo {
+    width: 30%;
+}
+
+.navmenu a {
+      text-decoration: none;
+      font-size: 1.25em;
+      padding: 20px;
+      color: #CA9A97;  
+      letter-spacing: 4px;
+}
+
+.navmenu a:hover {
+     color: saddlebrown;
+}
+
+.slideshow-container {  
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(../images/rustic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 8s;
+  animation-name: fade;
+  animation-duration: 8s;   
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .25}
+  50% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: 0}
+}
+
+@keyframes fade {
+  0% {opacity: .25}
+  50% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: 0}
+}
+
+.headgrp1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color: #CA9A97; 
+}
+
+.headgrp2 {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 100;
+    color: #CA9A97;
+}
+
+.details {
+    padding: 100px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.details > p {
+    font-family: 'Karla', sans-serif;
+    font-size: .8em;
+    letter-spacing: 2px;
+    color: #666762;
+}
+
+.categories {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    padding: 0 50px;  
+}
+
+.categories a {
+    color: #CA9A97;
+}
+
+.grid-item {
+    height: 650px;
+    padding: 50px;
+}   
+
+section.categories > div > p {
+    font-family: 'Karla', sans-serif; 
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: #666762;
+}
+
+#ceremony {
+    background: url(../images/cat_ceremony.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .9;
+    padding: 20px;
+}
+
+#reception {
+    background: url(../images/cat_reception.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+    padding: 20px;
+}
+
+#promise {
+    background: url(../images/cat_promise.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .9;
+    padding: 20px;
+}
+
+
+
+
+/* ----Booking Form----- */
+
+input[type=text], [type=email], [type=date], select, textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: .6em;  
+  color: darkgrey;
+}
+
+input[type=submit] {
+  background-color: #CA9A97;  
+  color: white;
+  padding: 12px 20px;
+  font-size: .75em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #CA9A97;
+}
+
+
+.bookingfrm {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 50px; 
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f6efee;
+  padding: 50px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+.container h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 100;
+    color: #CA9A97;
+    text-align: center;
+    padding: 50px;
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+label {
+    font-size: .7em;
+    letter-spacing: 2px;
+    color: #CA9A97;
+}
+
+.row {
+    font-size: 1.2em;
+    padding: 20px 10px;
+    width: 80%;
+}
+
+.row a {
+    color: #CA9A97;
+    font-size: .75em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+            /*         GALLERY PAGE         */
+
+
+.galmain{
+    padding: 50px 0;
+}
+
+.cntr {
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+
+.column {
+    flex: 30%;
+    max-width: 30%;
+    background: linear-gradient(to bottom, #f6efee 54%, #ffffff 100%);
+}
+.column img {
+    padding: 10px;
+    vertical-align: middle; /* this is a flex based property */
+    width: 100%;
+    opacity: .9;
+}
+
+
+                /*         ABOUT PAGE:         */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;    
+}
+
+.aboutdetails {
+    padding: 50px;
+    text-align: center;
+}
+
+.aboutdetails > p {
+    font-family: 'Karla', sans-serif; 
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: #666762;
+    padding: 0 50px;
+} 
+
+
+            /*         BOOKING PAGE         */
+
+.bkdetails {
+    text-align: center;
+    padding: 100px;
+}
+
+.bkdetails > p {
+    font-family: 'Karla', sans-serif; 
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    color: #666762;
+    padding: 0 50px;
+} 
+
+
+/* ----Footer----- */
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #CA9A97;
+    font-family: 'Karla', sans-serif;
+    height: 12vh;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;   
+    font-size: 1.5em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

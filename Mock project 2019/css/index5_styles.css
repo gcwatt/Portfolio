@@ -1,0 +1,142 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+    font-family: 'calibri', sans-serif;
+}
+
+body {
+   background: url(../images/port6.jpg) no-repeat fixed; 
+}
+
+.heading { 
+    grid-area: header; 
+    padding: 50px;
+    font-size: 2em;
+    text-align: center;
+    color: deeppink;
+    font-weight: bold;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.idcard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+}
+
+.person1 { 
+    grid-area: profile1; 
+}
+
+.person2 { 
+    grid-area: profile2; 
+}
+
+.person3 { 
+    grid-area: profile3; 
+}
+
+.person4 { 
+    grid-area: profile4; 
+}
+
+.person5 { 
+    grid-area: profile5; 
+}
+
+.person6 { 
+    grid-area: profile6; 
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "profile1" 
+        "profile2" 
+        "profile3"
+        "profile4" 
+        "profile5" 
+        "profile6";        
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px 50px;
+    padding: 20px;
+}
+
+.container img {
+    border-radius: 50%;
+    box-shadow: 0 0 6px #FF0000, 0 0 12px #0000FF;
+    animation-name: fadeIn;
+    animation-duration: 2.5s;    
+}
+
+.container a {
+    text-decoration: none;
+    color: hotpink;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;    
+}
+
+.container p {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.container a:hover{
+    color: white;
+}
+
+@keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+	}
+}
+
+
+
+                                                        /* ===== TABLET LAYOUT ===== */
+
+/* 600px to 980px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (max-width: 600px) {
+    
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "profile1 profile2" 
+        "profile3 profile4" 
+        "profile5 profile6";        
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px 75px;    
+    }
+    
+}
+
+
+                                                                /* ===== DESKTOP LAYOUT ===== */
+
+/* 980px and higher. Inherits styles from: Mobile and tablet Layout. */
+
+@media only screen and (min-width: 980px) {
+    
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "profile1 profile2 profile3"
+        "profile4 profile5 profile6";        
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px 75px;    
+    }
+    
+}
+

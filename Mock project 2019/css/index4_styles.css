@@ -1,0 +1,76 @@
+/* CSS Grid, Masonry page*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+   background: linear-gradient(90deg, rgba(162,41,177,1) 0%, rgba(9,9,121,1) 52%, rgba(0,212,255,1) 100%); 
+}
+
+/*===== CSS Flex Gallery Masonry Style ======*/
+
+.row {
+    margin: 20px 10px 20px 30px;
+    display: flex;
+    width: 95vw;
+    height: 10vh;
+    padding: 20px;
+    align-items: center;
+    background: white;
+    opacity: 0.8;
+}
+
+
+.flxmsnparent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle; /* this is a flex based property */
+    width: 100%;
+    padding: 10px;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+  
+    /* ====TABLET LAYOUT ====*/
+
+@media (max-width: 786px) {
+    .column {
+    flex: 100%;
+    max-width: 50%;
+    }
+
+
+.article {
+    grid-template-columns: auto auto;
+    text-align: left;
+}
+
+}
+
+/* ==== MOBILE LAYOUT ====*/
+
+@media (max-width: 600px) {
+    .column {
+    flex: 100%;
+    max-width: 100%;
+    }
+
+
+}

@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.blog {
+    width: 100vw;
+    padding: 50px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.blog-content {
+    padding: 100px 50px;
+    justify-content: center;
+}
+.blog-entry {    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-between;
+    padding: 50px;
+    margin: 0 200px;
+}
+
+#blogId2, #blogId4 {
+    background: #f8f2ec;
+}
+
+.blog-entry hgroup {
+    width: 100%;
+    padding: 30px 0;
+}
+.blog-entry hgroup h3 {
+    font-family: 'Satisfy', cursive;
+    padding: 10px 0;
+}
+.blog-entry hgroup h2 {
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+} 
+.blog-gallery {   
+    display: flex;
+    flex-flow: row wrap;
+    align-items: space-between;
+}
+.polaroid {  
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.polaroid p {
+    font-size: 1em;
+    font-weight: 200;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+.mini {
+    width: 350px;   
+}
+.large {
+    width: 475px;   
+} 
+
+.mini img {    
+    width: 350px;
+    height: 350px;
+    padding: 15px;
+    transition: 1.5s;
+    opacity: 0.8;
+}
+.mini img:hover {
+    opacity: 1;
+    transform: scale(2);
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    background-color: #f8f2ec;  
+}
+.large img {
+    padding: 20px;
+}
+.blog-vid {
+    width: 520px;
+    height: 440px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

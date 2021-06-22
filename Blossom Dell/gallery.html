@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gallery - Blossom Dell Sanctuary</title>
+        
+<!-- Font awesome -->                
+    <script src="https://kit.fontawesome.com/48f5c0bf8d.js" crossorigin="anonymous"></script>
+<!-- Google fonts CSS -->        
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Karla&display=swap" rel="stylesheet">
+<!-- My Style CSS -->
+    <link rel="stylesheet" href="css/sanctuary_site_style.css">	
+<!-- Favicon CSS  -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/BDS flower_icon.png" />
+
+    </head>
+    
+    <body>
+    
+      <header>
+             <div class="logo">
+                 <a href="index.html">
+                 <img src="images/BDSanctuary%20logo.png" alt="logo" style="width: 40%"></a>
+             </div>
+              <div class="navmenu">
+                <a href="index.html">HOME</a>            
+                <a href="gallery.html" class="active">GALLERY</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="book.html">BOOK</a>
+              </div>
+      </header>
+        
+    <main class="galmain">        
+    <br><br>  
+           <h3 class="headgrp2 cntr">
+               <img src="images/BDS%20flower_faded.jpg" style="width: 3%" alt="BDS"></h3>
+           <h3 class="headgrp2 cntr">The Zamans</h3> 
+           <br><br>
+            <section class="gallery">
+                <div class="column">
+                    <img src="images/zaman1.JPG" alt="zaman">
+                </div>
+                <div class="column">
+                    <img src="images/zaman3.JPG" alt="zaman">
+                    <img src="images/zaman4.JPG" alt="zaman">
+                </div>
+                <div class="column">
+                    <img src="images/zaman5.JPG" alt="zaman">
+                    <img src="images/zaman6.jpeg" alt="zaman">
+                </div>
+            </section> 
+    <br><br>                
+        <h3 class="headgrp2 cntr">
+              <img src="images/BDS%20flower_faded.jpg" style="width: 3%" alt="BDS"></h3>
+           <h3 class="headgrp2 cntr">The Smiths</h3> 
+           <br><br>  
+            <section class="gallery">
+                <div class="column">
+                    <img src="images/smith1.jpg" alt="smith">
+                    <img src="images/smith2.jpg" alt="smith">
+                </div>
+                <div class="column">
+                    <img src="images/smith3.jpeg" alt="smith">
+                    <img src="images/smith4.jpg" alt="smith">
+                </div>
+                <div class="column">
+                    <img src="images/smith5.jpg" alt="smith">
+                    <img src="images/smith6.jpg" alt="smith">
+                </div>
+            </section> 
+    <br><br> 
+        <h3 class="headgrp2 cntr">
+              <img src="images/BDS%20flower_faded.jpg" style="width: 3%" alt="BDS"></h3>
+           <h3 class="headgrp2 cntr">The Richards</h3> 
+           <br><br>       
+        <section class="gallery">
+            <div class="column">
+                <img src="images/richards2.jpg" alt="richards">
+            </div>
+            <div class="column">
+                <img src="images/richards3.jpg" alt="richards">
+                <img src="images/richards4.jpg" alt="richards">
+            </div>
+            <div class="column">
+                <img src="images/richards5.jpg" alt="richards">
+                <img src="images/richards6.jpg" alt="richards">
+            </div>
+        </section>
+    </main>
+     
+      <footer>
+          <div>
+            <p><img src="images/BDS%20flower.png" style="width: 4%" alt="BDS"></p> <br>
+            <p>Chelsea Roth   I   Events Co-ordinator Blossom Dell Sanctuary   I   Tel: 336-403-9343</p>    
+         </div>
+      </footer>
+      
+      
+       
+    </body>
+    
+
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 4 seconds
+}
+    </script>
+</html>

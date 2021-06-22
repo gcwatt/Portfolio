@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Book - Blossom Dell Sanctuary</title>
+        
+<!-- Font awesome -->                
+    <script src="https://kit.fontawesome.com/48f5c0bf8d.js" crossorigin="anonymous"></script>
+<!-- Google fonts CSS -->        
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Karla&display=swap" rel="stylesheet">
+<!-- My Style CSS -->
+  <link rel="stylesheet" href="css/sanctuary_site_style.css">	
+<!-- Favicon CSS  -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/BDS flower_icon.png" />
+    </head>
+    
+    <body>
+    
+      <header>
+             <div class="logo">
+                 <a href="index.html">
+                 <img src="images/BDSanctuary%20logo.png" alt="logo" style="width: 40%"></a>
+             </div>
+              <div class="navmenu">
+                <a href="index.html">HOME</a>            
+                <a href="gallery.html">GALLERY</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="book.html" class="active">BOOK</a>
+              </div>
+      </header>
+        
+    <main class="book">
+          <section class="bkdetails"> 
+              <h3><img src="images/BDS%20flower_faded.jpg" style="width: 3%" alt="BDS"></h3>     
+               <h3 class="headgrp2 cntr">our packages</h3> <br>
+                    <p>The Sanctuary formally came into being as a not-for-profit organization dedicated to the expression of spirituality for people of all beliefs willing to live harmoniously with the earth and all it’s inhabitants in 1969. Inspired by the times and nearby Woodstock Festival, a group of young cousins and their friends donated shares of their family land to the cause. The land has a
+                    rich history and deep ties to The Lenni Lenape Tribe as well as to the Pre-Revolution homesteaders that settled The Catskills. There are structures on the property dating back to 1742 and a catalogue of countless Native American artifacts found throughout the years. <br>
+                    Presently, The Sanctuary regularly hosts indigenous tribes including; The Lenape, Tieno and Native Guyanese to practice their traditions, ceremonies and beliefs. BDS is also dedicated to educating the community in renewable energies and sustainable agriculture and hosts The Perma Jam Festival annually. Further, The Sanctuary acts as a wildlife refuge and forest preserve to countless native animals, plants and wildflower species. Another cause fostered here at BDS is the care and rescue of horses. Our horses are not only able to thrive here, but
+                    provide members and guests much joy while visiting.</p>
+          </section>    
+          
+         <section class="bookingfrm">
+           
+            <div class="container">
+            
+             <h3>BOOKING REQUEST FORM</h3>
+             
+                <form name="bookingForm" action="/action_page.php">
+                 
+                  <div class="row">
+                    <div>
+                      <label for="fname">first name</label>
+                    </div>
+                    <div>
+                      <input type="text" id="fname" name="firstname" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <label for="lname">last name</label>
+                    </div>
+                    <div>
+                      <input type="text" id="lname" name="lastname" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                   <div>
+                      <label for="email">email</label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" required>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <label for="event">event type <a href="#">our packages</a></label>
+                    </div>
+                    <div>
+                        <input type="text" id="event" name="event" required>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div>
+                        <label for="eventdate">event date</label>
+                   </div>
+                     <div>
+                        <input type="date" name="eventdate" min="2021-04-01" max="2022-12-31" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <label for="more">tell us more...</label>
+                    </div>
+                    <div>
+                      <textarea id="more" name="more" maxlength="460" style="height:100px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="send">
+                  </div>
+              </form>
+              
+            </div>
+            
+        </section>
+               
+    </main>
+     
+     <footer>
+          <div>
+            <p><img src="images/BDS%20flower.png" style="width: 4%" alt="BDS"></p> <br>
+            <p>Chelsea Roth   I   Events Co-ordinator Blossom Dell Sanctuary   I   Tel: 336-403-9343</p>    
+         </div>
+      </footer>
+      
+</body>
+    
+
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 4 seconds
+}
+    </script>
+</html>

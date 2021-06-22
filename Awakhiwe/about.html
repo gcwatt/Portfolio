@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Awakhiwe.com</title>
+    
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+<!-- Font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- My Style CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/about.css">	
+<!-- Favicon CSS  -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon_logo.png" />
+	
+</head>
+<body>
+
+<!-- NAV MENU -->
+        <nav id="navbar" class="flex-nav">
+            <div class="logo">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="awakhiwe.com"></a>
+                <p>nothing has any worth until it has been shared with others</p>
+            </div>
+            <div class="menu">
+                <a href="about.html" class="active">about</a>
+                <a href="books.html">books</a>
+                <a href="blog.html">blog</a>
+                <a href="media.html">media</a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/awakhiwe.dlodlo/about?section=overview&lst=100010869104128%3A681035156%3A1567018238" target="_blank"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a> 
+            </div>                     
+            </nav>
+           
+<!-- MAIN SECTION -->
+    <main class="about">
+            <div class="about-content">
+                <div class="about-img"><img src="images/updates.jpg" alt="Awakhiwe"></div>
+                    <div class="about-text">
+                            <p><b class="spec-text">I</b> enjoy writing, travelling and sharing. I believe that sharing is an important part of every human being.</p>
+                            <p>If one is a great cook but all they do is cook for themselves without sharing with those around them; then their gift has not enriched the life of the cook.</p>
+                            <p>If you are good at writing songs or singing but you only sing in the basement to yourself and lock the lyrics in a trunk somewhere; then your music has not edified or inspired anyone. It has not done what it is supposed to do. The only way you can give life to anything is to share it with others. Your world could be your family and neighbours or social media or school newsletter or community hall. It doesn’t matter what you do, find ways to share what you love with others.</p>
+                            <p>Between a day job and other daily routines, there doesn’t seem to be much time left for many things I would like to do, but I want to find that time to write whenever I can.</p>
+                            <p>Now, I’m about to embark on publishing my first book, “Wonderings of a Seeker.” I’m really excited about this new adventure. It means whatever is within me is no longer static but it gets poured out for others to receive it.</p>
+                            <br>
+                            <p>Happy Sharing!</p>
+                            <br>
+                            <p class="spec-text">- Awa</p>
+                    </div>
+            </div>        
+    </main>
+    
+    
+<!-- FOOTER -->   
+       <footer>  
+            <aside>
+                <h2>Quick Links</h2>
+                <nav class="foot">
+                    <a href="about.html">About</a>
+                    <a href="books.html">Books</a>
+                    <a href="blog.html">Blog</a>
+                </nav>
+            </aside>
+
+            <aside>
+                <h2>Social Media</h2>
+                <nav class="footsocial">
+                    <a href="https://www.facebook.com/awakhiwe.dlodlo/about?section=overview&lst=100010869104128%3A681035156%3A1567018238" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+                </nav>
+            </aside>
+
+            <aside>
+                <h2>Subscribe Newsletter</h2>
+                <form action="mailto:someone@somewhere.com" method="post" enctype="text/plain" >
+                    <input type="email" id="mymail" name="mymail" placeholder="Enter Email" required>
+                    <input type="submit" value="submit">
+                </form>
+            </aside>
+       </footer>
+
+    <!-- Sticky Navbar  -->
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+       
+</body>
+</html>

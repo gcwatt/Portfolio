@@ -1,0 +1,209 @@
+/* ==== Mid term index2 stlyes === */
+
+                                            /* ===== MOBILE LAYOUT ===== */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'calibri', sans-serif;
+}
+
+/*====== CSS responsive Grid ======*/
+
+.sidebar {
+    grid-area: sidebar;
+    overflow: scroll;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    overflow: scroll;
+}
+
+.navbar {
+    height: 10vh;
+    grid-area: navbar; 
+}
+
+.content1 {
+    grid-area: content1;
+    overflow: scroll;
+}
+
+.content2 {
+    grid-area: content2;
+    overflow: scroll;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.box {
+    text-align: left;
+    justify-content: center; 
+    opacity: 0.8;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.box a {
+    color: black;
+    text-decoration: none;    
+}
+
+.box a:hover {
+    color: hotpink;
+}
+
+.grdparent {
+    background: url(../images/port6.jpg) no-repeat fixed;
+    background-size: cover;
+    padding-top: 30px;
+    width: 100vw;
+   /* height: 100vh; */
+    justify-content: center; 
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+        "navbar"
+        "sidebar" 
+        "content1" 
+        "content2"
+        "sidebar2"
+        "footer";
+    }
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    float: left;
+    display: block;
+    padding-right: 10px;
+}
+
+                                                        /* === Sticky Navbar CSS ===*/ 
+.sticky {
+  background-color: hotpink;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 72vw;
+  height: 10vh;
+  margin-top: 30px;
+}
+
+
+                                                        /* ===== TABLET LAYOUT ===== */
+
+/* 600px to 980px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (max-width: 600px) {
+    
+/* === CSS GRID === */
+    .grdparent {
+        grid-template-areas: 
+        "navbar"
+        "sidebar" 
+        "content1" 
+        "content2" 
+        "sidebar2"
+        "footer";
+}
+    
+    .sidebar {
+        grid-area: sidebar;
+        overflow: scroll;
+}
+
+    .sidebar2 {
+        grid-area: sidebar2;
+        overflow: scroll;
+}
+
+    .navbar {
+        grid-area: navbar; 
+}
+
+    .content1 {
+        grid-area: content1;
+        overflow: scroll;
+}
+
+    .content2 {
+        grid-area: content2;
+        overflow: scroll;
+}
+}
+
+    
+
+                                                                /* ===== DESKTOP LAYOUT ===== */
+
+/* 980px and higher. Inherits styles from: Mobile and tablet Layout. */
+
+@media only screen and (min-width: 980px) {
+    
+/* === CSS GRID === */
+    
+    .grdparent {
+        overflow: hidden;
+        padding: 30px;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+         "navbar navbar navbar"
+        "sidebar content1 sidebar2"
+        "content2 content2 sidebar2"
+            "footer footer footer";        
+    }
+
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    font-weight: bold;
+    float: left;
+    display: block;
+    padding-right: 30px;
+}
+
+.box {
+    padding: 50px;    
+}
+
+.sidebar {
+    grid-area: sidebar;
+    overflow: hidden;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    overflow: hidden;
+}
+
+.content1 {
+    grid-area: content1;
+    overflow: hidden;
+}
+
+.content2 {
+    grid-area: content2;
+    overflow: hidden;
+}
+}
+                         /* === Sticky Navbar CSS ===*/ 
+
+#navbar a:hover {
+  color: lightgray;
+  opacity: 1;
+}    
+    
+
+
+

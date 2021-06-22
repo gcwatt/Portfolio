@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ABOUT PAGE */
+.about {
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+.about-content {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.about-content .about-img {
+    width: 35vw;
+}
+.about-img img {
+    width: 500px;
+    height: 500px;
+}
+
+.about-content .about-text {
+    
+    padding-top: 20px;
+    width: 35vw;
+}
+.spec-text {
+    font-family: 'Satisfy', cursive;
+    font-size: 2em;
+    font-weight: 100;
+    color: #ffcc00;
+}

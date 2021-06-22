@@ -1,0 +1,343 @@
+
+/* *** CSS reset *** */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+    font-family: 'calibri', sans-serif;
+}
+
+
+                                /* =====INDEX PAGE STYLES ===== */
+
+/* ===== MOBILE LAYOUT FIRST ===== */
+
+#s1 {
+	background: url("../images/port6.jpg") no-repeat fixed center center;
+	background-size: cover;
+	min-height: 90vh;    
+	height: auto;    
+	display:flex;
+	justify-content: center;    
+	align-items: center;    
+}
+
+#s1 hgroup {
+	text-align: center;
+	color: black;	
+}
+
+#s1 h1 {
+	font-family: 'calibri', sans-serif;
+	font-size: 6vmax;
+	text-transform: uppercase;
+	font-weight: normal;
+    color: deeppink;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-weight: bolder;
+}
+
+#s2 {
+	background-color: lightcyan;
+	display: flex;
+	justify-content: center;
+	align-items: center;  	
+}
+
+#s article {
+	margin: 24px;
+}
+
+.multi {
+	column-count: 1;
+    margin: 24px;
+    justify-content: center;
+	align-items: center;  
+}
+
+footer {   
+    padding: 30px;
+    background: hotpink;
+    text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 5px;
+    padding: 30px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: white;
+}
+footer a:hover {
+    color: black;
+}
+
+
+
+/* === MENU INFO HERE === */
+
+#trigger {
+    font-family: 'calibri', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    color: deeppink;
+    font-weight: bold;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#trigger:hover {
+    color: white;
+}
+
+
+/* The Overlay triggered above */
+
+.overlay {
+  height: 100vh;
+  width: 0; 
+  position: fixed; 
+  z-index: 11; 
+  left: 0;
+  top: 0;
+  background-color: white; 
+  overflow-x: hidden; 
+  transition: all 0.5s; 
+  display: flex;
+}
+
+.overlay-content {
+  position: relative; 
+  height: 100vh;
+  width: 100vw;
+  display: flex; 
+  flex-flow: column nowrap;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+      text-decoration: none;
+      font-family: 'calibri', sans-serif;
+      font-size: 42px;
+      color: #818181;
+      transition: all 1s;
+      text-transform: uppercase;
+      color: deeppink;
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+      font-weight: normal;
+      display: flex;
+      flex: 1 100%;
+      width: 100vw;  
+}
+.overlay span {
+    padding: 20px;
+    writing-mode: vertical-rl; 
+ 
+}
+
+ a.one {
+    background: url("../images/img3.jpg") no-repeat center center;
+    height: 25vh;
+}
+ a.two {
+    background: url("../images/img4.jpg") no-repeat center center;
+    height: 25vh;
+}
+a.three {
+    background: url("../images/img1.jpg") no-repeat center center;
+    height: 25vh;
+}
+ a.four {
+    background: url("../images/img2.jpg") no-repeat center center;
+    height: 25vh;
+}
+
+.overlay-content a:hover, .overlay-content a:focus {
+  color: white;
+}
+
+.overlay-content .closebtn {
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  position: absolute;
+  z-index: 999;
+  color: deeppink;
+  font-weight: bold;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  width: 30px; 
+}
+
+/* ==== Responive Flex ======*/ 
+
+section.flxparent {
+	
+	height:100vh;
+    width: 100vw;
+	padding: 20px;
+	display: flex;  
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.flxparent a {
+	flex:1 100%;
+	border:solid white 10px;
+	font-family: Gotham, Helvetica, "sans-serif";
+    font-weight: bold;
+	font-size: 4vmax;
+	color: deeppink;
+	/*	if you want to center the a content turn it into its own flex parent */
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+
+.flxparent #one {
+	background: url("../images/img1.jpg") no-repeat;
+	background-size: cover;
+}
+
+.flxparent #two {
+	background: url("../images/img2.jpg") no-repeat;
+	background-size: cover;
+}
+
+.flxparent #three {
+	background: url("../images/img3.jpg") no-repeat;
+	background-size: cover;
+}
+
+.flxparent #four {
+	background: url("../images/img4.jpg") no-repeat;
+	background-size: cover;
+}
+
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+
+                                                                    /* ===== TABLE LAYOUT ===== */
+
+
+@media only screen and (max-width: 600px) {
+    .multi {
+        column-count: 2;
+    }
+    #s3 figure {
+        flex: 1 auto;
+    }
+
+
+section.flxparent { 
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.flxparent a {
+	    flex:1 auto;
+	}
+}
+
+
+
+
+                                                                    /* ===== DESKTOP LAYOUT ===== */
+
+
+@media only screen and (min-width: 980px) {
+    .multi {
+        column-count: 3;
+    }
+
+    
+  .overlay {
+      height: 100vh;
+      width: 0; 
+      position: fixed; 
+      z-index: 11; 
+      left: 0;
+      top: 0;
+      background-color: rgba(0,0,0, 0.9); 
+      overflow-x: hidden; 
+      transition: all 0.5s; 
+      display: flex;
+}
+  
+    
+.overlay-content {
+  position: relative; 
+  height: 100vh;
+  width: 100vw;
+  display: flex; 
+  flex-flow: row nowrap;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+      position: relative;
+      padding: 0px;
+      text-decoration: none;
+      font-family: 'calibri', sans-serif;
+      font-size: 42px;
+      color: #818181;
+      transition: all 0.5s; /* Transition effects on hover (color) */
+      text-transform: uppercase;
+      color: deeppink;
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+      font-weight: normal;
+      display: flex;
+      flex: 1 100%
+      width: 100vw;  
+}
+
+    
+.overlay-content a.one {
+    background: url("../images/img3.jpg") no-repeat center center;
+    height: 100vh;
+    flex: 1;
+}
+.overlay-content a.two {
+    background: url("../images/img4.jpg") no-repeat center center;
+    height: 100vh;
+    flex: 1;
+}
+.overlay-content a.three {
+    background: url("../images/img1.jpg") no-repeat center center;
+    height: 100vh;
+    flex: 1;
+}
+.overlay-content a.four {
+    background: url("../images/img2.jpg") no-repeat center center;
+    height: 100vh;
+    flex: 1;
+}
+
+.overlay-content a:hover, .overlay-content a:focus {
+  color: white;
+  flex-grow: 2;
+}
+ 
+ .flxparent a {
+	    flex:1 auto;
+	}
+    
+.flxparent { 
+        flex-flow: row nowrap;
+    }
+}
